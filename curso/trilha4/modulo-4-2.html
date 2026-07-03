@@ -301,6 +301,26 @@
             </div>
             <p class="text-neutral-400 text-sm inema-prose mb-6"><strong class="text-amber-400">Como verificar:</strong> a skill relata cada fase concluída e devolve o reel final. Se o revisor der FAIL em algum ponto, ela corrige e roda de novo — você só recebe quando passa.</p>
 
+            <!-- SEQUÊNCIA REAL: o que você digita -->
+            <h3 class="text-lg font-semibold text-amber-400 mb-2">A sequência real, com um caminho de verdade</h3>
+            <p class="text-neutral-300 text-sm inema-prose mb-2">O jeito mais simples é deixar a skill decidir — ela lê o bruto e propõe os tratamentos:</p>
+            <div class="bg-dark-900 rounded-xl border border-dark-600 overflow-hidden mb-3">
+              <div class="flex items-center justify-between px-4 py-2 border-b border-dark-600 bg-dark-800">
+                <span class="text-xs font-mono text-neutral-400">você digita no Claude Code</span>
+                <button type="button" onclick="var c=this.closest('div').parentNode.querySelector('code'); if(navigator.clipboard)navigator.clipboard.writeText(c.innerText); this.textContent='Copiado';" class="text-xs px-2 py-1 rounded bg-dark-700 hover:bg-dark-600 text-neutral-300 transition-colors">Copiar</button>
+              </div>
+              <pre class="p-4 overflow-x-auto text-sm"><code class="font-mono text-amber-300">reel edita ~/videos/bruto.mp4</code></pre>
+            </div>
+            <p class="text-neutral-300 text-sm inema-prose mb-2">Ou já guiando o tratamento na mesma linha, depois de um <span class="font-mono text-amber-300">—</span>:</p>
+            <div class="bg-dark-900 rounded-xl border border-dark-600 overflow-hidden mb-4">
+              <div class="flex items-center justify-between px-4 py-2 border-b border-dark-600 bg-dark-800">
+                <span class="text-xs font-mono text-neutral-400">você digita no Claude Code</span>
+                <button type="button" onclick="var c=this.closest('div').parentNode.querySelector('code'); if(navigator.clipboard)navigator.clipboard.writeText(c.innerText); this.textContent='Copiado';" class="text-xs px-2 py-1 rounded bg-dark-700 hover:bg-dark-600 text-neutral-300 transition-colors">Copiar</button>
+              </div>
+              <pre class="p-4 overflow-x-auto text-sm"><code class="font-mono text-amber-300">reel edita ~/videos/bruto.mp4 — tela dividida e cold open com o print do resultado</code></pre>
+            </div>
+            <p class="text-neutral-400 text-sm inema-prose mb-6">Nos dois casos o caminho é o mesmo: ela mostra o <strong class="text-amber-300">corte limpo</strong> pra você aprovar → monta motion, B-roll, legendas e SFX → roda o revisor até <strong class="text-amber-300">PASS</strong> → entrega o reel final.</p>
+
             <p class="text-neutral-300 text-sm inema-prose mb-2" data-inema-block="m4-2-t1-p2"><span class="text-amber-400 font-semibold">Por que aprender:</span> ver o fluxo inteiro num vídeo real amarra tudo que você estudou. <span class="text-amber-400 font-semibold">Conceitos-chave:</span> 5 fases, fluxo ponta a ponta, comando único.</p>
 
             <div class="flex justify-start mt-6">

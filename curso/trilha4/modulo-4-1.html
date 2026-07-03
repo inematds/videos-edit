@@ -225,6 +225,31 @@
 
         <div class="min-w-0">
 
+          <!-- HIGHLIGHT: como você dá o comando -->
+          <div class="bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-2xl border border-amber-500/30 p-6 mb-12">
+            <h2 class="text-xl font-bold text-amber-400 mb-3 flex items-center"><span class="mr-2">🎮</span> Como você dá o comando</h2>
+            <p class="text-neutral-300 text-sm inema-prose mb-4">Toda receita deste módulo é acionada do mesmo jeito: no Claude Code você digita <span class="font-mono text-amber-300">reel edita</span> seguido do caminho do seu vídeo vertical. Daí você tem <strong class="text-neutral-100">dois jeitos</strong>:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5 text-sm">
+              <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
+                <h3 class="font-semibold text-amber-400 mb-1">1. Deixa a skill propor</h3>
+                <p class="text-neutral-300 inema-prose">Roda só <span class="font-mono text-amber-300">reel edita ~/videos/bruto.mp4</span>. A skill lê o vídeo e propõe 2–3 tratamentos com recomendação — você escolhe qual seguir.</p>
+              </div>
+              <div class="bg-dark-800 rounded-xl border border-dark-600 p-4">
+                <h3 class="font-semibold text-amber-400 mb-1">2. Guia em linguagem natural</h3>
+                <p class="text-neutral-300 inema-prose">Escreve a intenção depois do caminho, separada por um <span class="font-mono text-amber-300">—</span>. É exatamente o que cada receita abaixo faz — cada uma traz o comando pronto pra copiar.</p>
+              </div>
+            </div>
+            <p class="text-neutral-300 text-sm inema-prose mb-2">O jeito 1, puro — ela lê e te devolve as opções:</p>
+            <div class="bg-dark-900 rounded-xl border border-dark-600 overflow-hidden mb-3">
+              <div class="flex items-center justify-between px-4 py-2 border-b border-dark-600 bg-dark-800">
+                <span class="text-xs font-mono text-neutral-400">você digita no Claude Code</span>
+                <button type="button" onclick="var c=this.closest('div').parentNode.querySelector('code'); if(navigator.clipboard)navigator.clipboard.writeText(c.innerText); this.textContent='Copiado';" class="text-xs px-2 py-1 rounded bg-dark-700 hover:bg-dark-600 text-neutral-300 transition-colors">Copiar</button>
+              </div>
+              <pre class="p-4 overflow-x-auto text-sm"><code class="font-mono text-amber-300">reel edita ~/videos/bruto.mp4</code></pre>
+            </div>
+            <p class="text-neutral-400 text-sm inema-prose">Em qualquer um dos jeitos ela sempre mostra o <strong class="text-amber-300">corte limpo</strong> pra você aprovar antes de animar, depois monta e roda o revisor até dar PASS. Equivalem a <span class="font-mono text-amber-300">reel edita</span>: <span class="font-mono text-amber-300">faz o reel deste vídeo: &lt;caminho&gt;</span> ou <span class="font-mono text-amber-300">/reel-&lt;sua-marca&gt; &lt;caminho&gt;</span>.</p>
+          </div>
+
           <!-- ================= TÓPICO 1 ================= -->
           <section id="topico-1" data-inema-topic="modulo-4-1#topico-1" class="mb-16">
             <div class="flex items-center justify-between gap-3 mb-6">
@@ -288,6 +313,17 @@
               <div class="bg-dark-800 rounded-xl border border-dark-600 p-4"><span class="text-amber-400 font-semibold">Conceitos-chave</span><p class="text-neutral-300 mt-1">Tela cheia, overlay de B-roll, receita base.</p></div>
             </div>
 
+            <!-- COMANDO CONCRETO DESTA RECEITA -->
+            <p class="text-neutral-300 text-sm inema-prose mb-2"><strong class="text-amber-400">Objetivo:</strong> pedir a receita Editor Pro.</p>
+            <div class="bg-dark-900 rounded-xl border border-dark-600 overflow-hidden mb-3">
+              <div class="flex items-center justify-between px-4 py-2 border-b border-dark-600 bg-dark-800">
+                <span class="text-xs font-mono text-neutral-400">você digita no Claude Code</span>
+                <button type="button" onclick="var c=this.closest('div').parentNode.querySelector('code'); if(navigator.clipboard)navigator.clipboard.writeText(c.innerText); this.textContent='Copiado';" class="text-xs px-2 py-1 rounded bg-dark-700 hover:bg-dark-600 text-neutral-300 transition-colors">Copiar</button>
+              </div>
+              <pre class="p-4 overflow-x-auto text-sm"><code class="font-mono text-amber-300">reel edita ~/videos/bruto.mp4 — editor pro: eu em tela cheia, B-roll por cima quando eu citar algo</code></pre>
+            </div>
+            <p class="text-neutral-400 text-sm inema-prose mb-6"><strong class="text-amber-400">Como verificar:</strong> a skill responde propondo o tratamento e mostra o corte limpo antes de animar.</p>
+
             <div class="flex justify-start mt-6">
               <button type="button" data-inema-read-toggle aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
                 <span class="inema-read-icon" aria-hidden="true">○</span><span class="inema-read-label">Marcar como lido</span>
@@ -329,6 +365,17 @@
               <p class="mb-2"><span class="text-amber-400 font-semibold">Por que aprender:</span> escolher entre PiP e overlay é o que dá intenção ao reel — não é decoração, é sobre o que o espectador precisa ver naquele segundo.</p>
               <p><span class="text-amber-400 font-semibold">Conceitos-chave:</span> PiP, janela flutuante, coexistência de rosto e apoio.</p>
             </div>
+
+            <!-- COMANDO CONCRETO DESTA RECEITA -->
+            <p class="text-neutral-300 text-sm inema-prose mb-2"><strong class="text-amber-400">Objetivo:</strong> pedir a receita B-roll PiP.</p>
+            <div class="bg-dark-900 rounded-xl border border-dark-600 overflow-hidden mb-3">
+              <div class="flex items-center justify-between px-4 py-2 border-b border-dark-600 bg-dark-800">
+                <span class="text-xs font-mono text-neutral-400">você digita no Claude Code</span>
+                <button type="button" onclick="var c=this.closest('div').parentNode.querySelector('code'); if(navigator.clipboard)navigator.clipboard.writeText(c.innerText); this.textContent='Copiado';" class="text-xs px-2 py-1 rounded bg-dark-700 hover:bg-dark-600 text-neutral-300 transition-colors">Copiar</button>
+              </div>
+              <pre class="p-4 overflow-x-auto text-sm"><code class="font-mono text-amber-300">reel edita ~/videos/bruto.mp4 — me deixa em PiP no canto e mostra o site/app em tela cheia</code></pre>
+            </div>
+            <p class="text-neutral-400 text-sm inema-prose mb-6"><strong class="text-amber-400">Como verificar:</strong> a skill responde propondo o tratamento e mostra o corte limpo antes de animar.</p>
 
             <div class="flex justify-start mt-6">
               <button type="button" data-inema-read-toggle aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
@@ -376,6 +423,17 @@
             </div>
 
             <p class="text-neutral-300 text-sm inema-prose mb-2" data-inema-block="m4-1-t3-p2"><span class="text-amber-400 font-semibold">Por que aprender:</span> é a única receita que mostra "o fazer" na prática sem virar um screencast sem alma — o rosto no PiP mantém a presença humana. <span class="text-amber-400 font-semibold">Conceitos-chave:</span> screenshare, transição rosto→PiP, demo.</p>
+
+            <!-- COMANDO CONCRETO DESTA RECEITA -->
+            <p class="text-neutral-300 text-sm inema-prose mb-2"><strong class="text-amber-400">Objetivo:</strong> pedir a receita screenshare + demo.</p>
+            <div class="bg-dark-900 rounded-xl border border-dark-600 overflow-hidden mb-3">
+              <div class="flex items-center justify-between px-4 py-2 border-b border-dark-600 bg-dark-800">
+                <span class="text-xs font-mono text-neutral-400">você digita no Claude Code</span>
+                <button type="button" onclick="var c=this.closest('div').parentNode.querySelector('code'); if(navigator.clipboard)navigator.clipboard.writeText(c.innerText); this.textContent='Copiado';" class="text-xs px-2 py-1 rounded bg-dark-700 hover:bg-dark-600 text-neutral-300 transition-colors">Copiar</button>
+              </div>
+              <pre class="p-4 overflow-x-auto text-sm"><code class="font-mono text-amber-300">reel edita ~/videos/bruto.mp4 — começo em tela cheia, depois desço pro canto e compartilho minha tela</code></pre>
+            </div>
+            <p class="text-neutral-400 text-sm inema-prose mb-6"><strong class="text-amber-400">Como verificar:</strong> a skill responde propondo o tratamento e mostra o corte limpo antes de animar.</p>
 
             <div class="flex justify-start mt-6">
               <button type="button" data-inema-read-toggle aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
@@ -427,6 +485,17 @@
 
             <p class="text-neutral-300 text-sm inema-prose mb-2"><span class="text-amber-400 font-semibold">Por que aprender:</span> comparação é um dos formatos que mais retêm; o split a torna instantânea. <span class="text-amber-400 font-semibold">Conceitos-chave:</span> split, comparação, contraste visual.</p>
 
+            <!-- COMANDO CONCRETO DESTA RECEITA -->
+            <p class="text-neutral-300 text-sm inema-prose mb-2"><strong class="text-amber-400">Objetivo:</strong> pedir a receita tela dividida (split).</p>
+            <div class="bg-dark-900 rounded-xl border border-dark-600 overflow-hidden mb-3">
+              <div class="flex items-center justify-between px-4 py-2 border-b border-dark-600 bg-dark-800">
+                <span class="text-xs font-mono text-neutral-400">você digita no Claude Code</span>
+                <button type="button" onclick="var c=this.closest('div').parentNode.querySelector('code'); if(navigator.clipboard)navigator.clipboard.writeText(c.innerText); this.textContent='Copiado';" class="text-xs px-2 py-1 rounded bg-dark-700 hover:bg-dark-600 text-neutral-300 transition-colors">Copiar</button>
+              </div>
+              <pre class="p-4 overflow-x-auto text-sm"><code class="font-mono text-amber-300">reel edita ~/videos/bruto.mp4 — tela dividida: eu em cima, o código/print embaixo</code></pre>
+            </div>
+            <p class="text-neutral-400 text-sm inema-prose mb-6"><strong class="text-amber-400">Como verificar:</strong> a skill responde propondo o tratamento e mostra o corte limpo antes de animar.</p>
+
             <div class="flex justify-start mt-6">
               <button type="button" data-inema-read-toggle aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
                 <span class="inema-read-icon" aria-hidden="true">○</span><span class="inema-read-label">Marcar como lido</span>
@@ -469,6 +538,17 @@
 
             <p class="text-neutral-300 text-sm inema-prose mb-2" data-inema-block="m4-1-t5-p2"><span class="text-amber-400 font-semibold">Por que aprender:</span> o punch é o que transforma "vídeo com legenda" em "vídeo editado com intenção". <span class="text-amber-400 font-semibold">Conceitos-chave:</span> motion graphics, punch, palavra destacada.</p>
 
+            <!-- COMANDO CONCRETO DESTA RECEITA -->
+            <p class="text-neutral-300 text-sm inema-prose mb-2"><strong class="text-amber-400">Objetivo:</strong> pedir a receita texto em movimento com punch.</p>
+            <div class="bg-dark-900 rounded-xl border border-dark-600 overflow-hidden mb-3">
+              <div class="flex items-center justify-between px-4 py-2 border-b border-dark-600 bg-dark-800">
+                <span class="text-xs font-mono text-neutral-400">você digita no Claude Code</span>
+                <button type="button" onclick="var c=this.closest('div').parentNode.querySelector('code'); if(navigator.clipboard)navigator.clipboard.writeText(c.innerText); this.textContent='Copiado';" class="text-xs px-2 py-1 rounded bg-dark-700 hover:bg-dark-600 text-neutral-300 transition-colors">Copiar</button>
+              </div>
+              <pre class="p-4 overflow-x-auto text-sm"><code class="font-mono text-amber-300">reel edita ~/videos/bruto.mp4 — foco em texto animado, punch nas palavras-chave</code></pre>
+            </div>
+            <p class="text-neutral-400 text-sm inema-prose mb-6"><strong class="text-amber-400">Como verificar:</strong> a skill responde propondo o tratamento e mostra o corte limpo antes de animar.</p>
+
             <div class="flex justify-start mt-6">
               <button type="button" data-inema-read-toggle aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
                 <span class="inema-read-icon" aria-hidden="true">○</span><span class="inema-read-label">Marcar como lido</span>
@@ -500,6 +580,17 @@
               <div class="bg-dark-800 rounded-xl border border-dark-600 p-4"><span class="text-amber-400 font-semibold">Por que aprender</span><p class="text-neutral-300 mt-1">Credibilidade: o real convence mais que qualquer imagem genérica.</p></div>
               <div class="bg-dark-800 rounded-xl border border-dark-600 p-4"><span class="text-amber-400 font-semibold">Conceitos-chave</span><p class="text-neutral-300 mt-1">Captura real, moldura de navegador, prova.</p></div>
             </div>
+
+            <!-- COMANDO CONCRETO DESTA RECEITA -->
+            <p class="text-neutral-300 text-sm inema-prose mb-2"><strong class="text-amber-400">Objetivo:</strong> pedir a receita elementos reais.</p>
+            <div class="bg-dark-900 rounded-xl border border-dark-600 overflow-hidden mb-3">
+              <div class="flex items-center justify-between px-4 py-2 border-b border-dark-600 bg-dark-800">
+                <span class="text-xs font-mono text-neutral-400">você digita no Claude Code</span>
+                <button type="button" onclick="var c=this.closest('div').parentNode.querySelector('code'); if(navigator.clipboard)navigator.clipboard.writeText(c.innerText); this.textContent='Copiado';" class="text-xs px-2 py-1 rounded bg-dark-700 hover:bg-dark-600 text-neutral-300 transition-colors">Copiar</button>
+              </div>
+              <pre class="p-4 overflow-x-auto text-sm"><code class="font-mono text-amber-300">reel edita ~/videos/bruto.mp4 — usa capturas reais do meu repo github.com/&lt;voce&gt;/&lt;repo&gt;</code></pre>
+            </div>
+            <p class="text-neutral-400 text-sm inema-prose mb-6"><strong class="text-amber-400">Como verificar:</strong> a skill responde propondo o tratamento e mostra o corte limpo antes de animar.</p>
 
             <div class="flex justify-start mt-6">
               <button type="button" data-inema-read-toggle aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
@@ -563,6 +654,17 @@
               </div>
               <div data-inema-check-feedback class="mt-4 text-sm" role="status" aria-live="polite"></div>
             </div>
+
+            <!-- COMANDO CONCRETO DESTA RECEITA -->
+            <p class="text-neutral-300 text-sm inema-prose mb-2 mt-8"><strong class="text-amber-400">Objetivo:</strong> pedir a receita cold open.</p>
+            <div class="bg-dark-900 rounded-xl border border-dark-600 overflow-hidden mb-3">
+              <div class="flex items-center justify-between px-4 py-2 border-b border-dark-600 bg-dark-800">
+                <span class="text-xs font-mono text-neutral-400">você digita no Claude Code</span>
+                <button type="button" onclick="var c=this.closest('div').parentNode.querySelector('code'); if(navigator.clipboard)navigator.clipboard.writeText(c.innerText); this.textContent='Copiado';" class="text-xs px-2 py-1 rounded bg-dark-700 hover:bg-dark-600 text-neutral-300 transition-colors">Copiar</button>
+              </div>
+              <pre class="p-4 overflow-x-auto text-sm"><code class="font-mono text-amber-300">reel edita ~/videos/bruto.mp4 — cold open de 2s com o resultado final antes da intro</code></pre>
+            </div>
+            <p class="text-neutral-400 text-sm inema-prose mb-6"><strong class="text-amber-400">Como verificar:</strong> a skill responde propondo o tratamento e mostra o corte limpo antes de animar.</p>
 
             <div class="flex justify-start mt-6">
               <button type="button" data-inema-read-toggle aria-pressed="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500/20 border border-amber-500/30 text-amber-400 hover:bg-amber-500/30 transition-colors">
